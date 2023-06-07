@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>lol_results</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!--
+        <h1>Equipe Rouge</h1>
+        <ul>
+            <li>Jungler: {{ roaster_red["Jungler"] }}</li>
+            <li>DPS1: {{ roaster_red["DPS1"] }}</li>
+            <li>DPS2: {{ roaster_red["DPS2"] }}</li>
+            <li>Healer1: {{ roaster_red["Healer1"] }}</li>
+            <li>Healer2: {{ roaster_red["Healer2"] }}</li>
+        </ul>
+    
+        <h1>Equipe Bleue</h1>
+        <ul>
+            <li>Jungler: {{ roaster_blue["Jungler"] }}</li>
+            <li>DPS1: {{ roaster_blue["DPS1"] }}</li>
+            <li>DPS2: {{ roaster_blue["DPS2"] }}</li>
+            <li>Healer1: {{ roaster_blue["Healer1"] }}</li>
+            <li>Healer2: {{ roaster_blue["Healer2"] }}</li>
+        </ul>
+    -->
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Rôle
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Joueurs équipe rouge
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Jungler
+                </th>
+                <td class="px-6 py-4">
+                    {{ roaster_red["Jungler"] }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Toplaner
+                </th>
+                <td class="px-6 py-4">
+                    {{ roaster_red["Toplaner"] }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Midlaner
+                </th>
+                <td class="px-6 py-4">
+                    {{ roaster_red["Midlaner"] }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Botlaner
+                </th>
+                <td class="px-6 py-4">
+                    {{ roaster_red["Botlaner"] }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Support
+                </th>
+                <td class="px-6 py-4">
+                    {{ roaster_red["Support"] }}
+                </td>
+            </tr>
+
+
+            <div class="relative overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Rôle
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Joueurs équipe bleue
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Jungler
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ roaster_blue["Jungler"] }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Toplaner
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ roaster_blue["Toplaner"] }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Midlaner
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ roaster_blue["Midlaner"] }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Botlaner
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ roaster_blue["Botlaner"] }}
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Support
+                            </th>
+                            <td class="px-6 py-4">
+                                {{ roaster_blue["Support"] }}
+                            </td>
+                        </tr>
+            
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
